@@ -6,7 +6,7 @@ args = ["generate"]
 dependencies = ["did"]
 
 [tasks.did]
-description = "generate .did"
+description = "generate.did"
 workspace = false
 command = "cargo"
 args= ["test"]
