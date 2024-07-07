@@ -13,7 +13,7 @@ fn set_timer_id(value: Option<TimerId>) {
     TIMER_ID.with(|state| *state.borrow_mut() = value);
 }
 fn now() -> u64 {
-    ic_cdk::api::time() / (1000 * 1000000)
+    ic_cdk::api::time() / (1000 * 100000)
 }
 
 #[ic_cdk::update]
